@@ -18,7 +18,7 @@ const instructors = [
   {
     name: "Сава",
     role: "Short Form Content Expert",
-    image: "/img/sava.png   ",
+    image: "/img/sava.png",
     description: "Специалист в монетизирането на кратко съдържание (short form content). Той ще ви покаже как да трансформирате вашето съдържание в печеливша машина и как да достигнете до широка аудитория."
   }
 ];
