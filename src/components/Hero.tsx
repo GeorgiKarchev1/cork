@@ -22,15 +22,8 @@ interface Particle {
 export default function Hero() {
   const [stars, setStars] = useState<Star[]>([]);
   const [particles, setParticles] = useState<Particle[]>([]);
-  const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
 
   useEffect(() => {
-    // Update window size
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-
     // Generate stars
     const newStars = Array.from({ length: 30 }, () => ({
       top: Math.random() * 100,

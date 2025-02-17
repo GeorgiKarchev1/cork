@@ -62,18 +62,32 @@ const bonuses = [
   }
 ]
 
+function generateStars(count: number, seed = 1): Star[] {
+  const pseudoRandom = (seed: number) => {
+    let value = seed;
+    return () => {
+      value = (value * 16807) % 2147483647;
+      return (value - 1) / 2147483646;
+    };
+  };
+
+  const random = pseudoRandom(seed);
+  
+  return Array.from({ length: count }, () => ({
+    top: random() * 100,
+    left: random() * 100,
+    size: random() * 2 + 1,
+    duration: random() * 3 + 2,
+    delay: random() * 2
+  }));
+}
+
 export default function Curriculum() {
-  const [stars, setStars] = useState<Star[]>([]);
+  const [stars] = useState(() => generateStars(50, 12345));
   const [particles, setParticles] = useState<Particle[]>([]);
-  const [dimensions, setDimensions] = useState({ width: 1000, height: 1000 });
   const [particleTargets, setParticleTargets] = useState<Particle[]>([]);
 
   useEffect(() => {
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-
     // Create initial particles and their targets
     const newParticles = Array.from({ length: 20 }, () => ({
       x: Math.random() * window.innerWidth,
