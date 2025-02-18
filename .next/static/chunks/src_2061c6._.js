@@ -152,7 +152,7 @@ function Navbar() {
             className: "container mx-auto px-4 lg:px-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex justify-between items-center h-24",
+                    className: "flex justify-between items-center h-16 sm:h-20 lg:h-24",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/",
@@ -162,7 +162,7 @@ function Navbar() {
                                 alt: "Agency Logo",
                                 width: 200,
                                 height: 60,
-                                className: "w-32 md:w-48 h-auto object-contain",
+                                className: "w-24 sm:w-32 md:w-48 h-auto object-contain",
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar.tsx",
@@ -231,10 +231,10 @@ function Navbar() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "lg:hidden p-2 rounded-lg hover:bg-white/5 transition-all duration-300 ml-auto",
+                            className: "lg:hidden p-1.5 sm:p-2 rounded-lg hover:bg-white/5 transition-all duration-300 ml-auto",
                             onClick: ()=>setIsMenuOpen(!isMenuOpen),
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative w-6 h-5 flex flex-col justify-between",
+                                className: "relative w-5 sm:w-6 h-4 sm:h-5 flex flex-col justify-between",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: `w-full h-[2px] bg-white transform transition-all duration-300 ease-out origin-left ${isMenuOpen ? 'rotate-45 translate-x-px' : 'rotate-0'}`
@@ -281,11 +281,11 @@ function Navbar() {
                         transform: 'translateZ(0)'
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col space-y-4 pb-4 px-4",
+                        className: "flex flex-col space-y-3 sm:space-y-4 py-3 sm:py-4 px-3 sm:px-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>scrollToSection('features'),
-                                className: "text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
+                                className: "text-gray-200 hover:text-white transition-colors text-base sm:text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
                                 style: {
                                     transform: 'translateZ(0)'
                                 },
@@ -297,7 +297,7 @@ function Navbar() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>scrollToSection('curriculum'),
-                                className: "text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
+                                className: "text-gray-200 hover:text-white transition-colors text-base sm:text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
                                 style: {
                                     transform: 'translateZ(0)'
                                 },
@@ -309,7 +309,7 @@ function Navbar() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>scrollToSection('pricing'),
-                                className: "text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
+                                className: "text-gray-200 hover:text-white transition-colors text-base sm:text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
                                 style: {
                                     transform: 'translateZ(0)'
                                 },
@@ -321,7 +321,7 @@ function Navbar() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>scrollToSection('testimonials'),
-                                className: "text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
+                                className: "text-gray-200 hover:text-white transition-colors text-base sm:text-lg font-semibold transform-gpu hover:translate-x-2 duration-200",
                                 style: {
                                     transform: 'translateZ(0)'
                                 },
@@ -335,7 +335,7 @@ function Navbar() {
                                 href: "https://whop.com/discover/the-agency-bg/",
                                 target: "_blank",
                                 rel: "noopener noreferrer",
-                                className: "bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-colors text-lg font-semibold shadow-lg hover:shadow-amber-500/20 text-center transform-gpu",
+                                className: "bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-colors text-base sm:text-lg font-semibold shadow-lg hover:shadow-amber-500/20 text-center transform-gpu",
                                 style: {
                                     transform: 'translateZ(0)'
                                 },
@@ -467,7 +467,7 @@ function Hero() {
         }
     }["Hero.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative min-h-screen flex flex-col items-center justify-center px-4 pb-16",
+        className: "relative min-h-screen pt-16 sm:pt-20 lg:pt-24 flex flex-col items-center justify-center px-4 pb-16",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 overflow-hidden",

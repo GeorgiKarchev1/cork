@@ -50,7 +50,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pb-16">
+    <section className="relative min-h-screen pt-16 sm:pt-20 lg:pt-24 flex flex-col items-center justify-center px-4 pb-16">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Existing gradient orbs */}
