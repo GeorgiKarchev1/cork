@@ -61,38 +61,7 @@ const benefits = [
 ]
 
 export default function Pricing() {
-  const [stars, setStars] = useState<Star[]>([]);
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, latest => Math.round(latest));
-  const displayText = useTransform(count, latest => Math.round(latest).toString());
-  const displayValue = useMotionValue("0");
-  
-  useEffect(() => {
-    const newStars = Array.from({ length: 20 }, () => ({
-      top: Math.random() * 100,
-      left: Math.random() * 100,
-      size: Math.random() * 3 + 1,
-      duration: Math.random() * 3 + 2,
-      delay: Math.random() * 2
-    }));
-    setStars(newStars);
-
-    const animation = animate(count, 150, {
-      duration: 2,
-      ease: "easeOut",
-      onComplete: () => {
-        count.stop();
-      }
-    });
-
-    return () => animation.stop();
-  }, [count]);
-
-  useEffect(() => {
-    return displayText.on("change", latest => {
-      displayValue.set(latest);
-    });
-  }, [displayText, displayValue]);
+  const totalValue = "3,890"; // Директно задаваме крайната стойност
 
   return (
     <section id="pricing" className="relative py-24 overflow-hidden">
@@ -101,32 +70,6 @@ export default function Pricing() {
         {/* Gradient orbs */}
         <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#7D4CC3]/20 rounded-full blur-[120px] translate-x-1/2 hardware-accelerated" />
         <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4 hardware-accelerated" />
-        
-        {/* Animated Stars */}
-        {stars.map((star, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-white hardware-accelerated"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ 
-              opacity: [0.1, 0.5, 0.1],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: star.duration,
-              delay: star.delay,
-              repeat: Infinity,
-              ease: "easeInOut",
-              repeatType: "reverse"
-            }}
-            style={{
-              top: `${star.top}%`,
-              left: `${star.left}%`,
-              width: `${star.size}px`,
-              height: `${star.size}px`,
-            }}
-          />
-        ))}
       </div>
 
       <div className="container relative mx-auto px-4">
@@ -140,9 +83,9 @@ export default function Pricing() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gray-300">Стойност над</span>
             <br />
-            <motion.span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">
-              {displayValue.get()}0+ лв.
-            </motion.span>
+            <span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">
+              {totalValue} лв.
+            </span>
           </h2>
           
           <div className="flex flex-col items-center gap-4">

@@ -139,11 +139,11 @@ export default function Curriculum() {
           className="text-center mb-16 hardware-accelerated"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-gray-300">Учебна</span>
+            <span className="text-gray-300">Съдържание</span>
             <br />
-            <span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">
+            {/* <span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">
               програма
-            </span>
+            </span> */}
           </h2>
         </motion.div>
 

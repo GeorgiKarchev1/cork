@@ -98,24 +98,49 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Video Preview */}
+        {/* Videos Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-16 max-w-4xl mx-auto hardware-accelerated"
+          className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto hardware-accelerated"
         >
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full rounded-2xl shadow-2xl transition-optimized"
-          >
-            <source src="/img/rek.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {/* Video 1 */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+            <video
+              controls
+              className="w-full h-full object-cover transition-optimized"
+              preload="metadata"
+            >
+              <source src="/img/rek.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* Video 2 */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+            <video
+              controls
+              className="w-full h-full object-cover transition-optimized"
+              preload="metadata"
+            >
+              <source src="/img/video222.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* Video 3 */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+            <video
+              controls
+              className="w-full h-full object-cover transition-optimized"
+              preload="metadata"
+            >
+              <source src="/img/video1111.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </motion.div>
 
         <div className="text-center mt-12">
