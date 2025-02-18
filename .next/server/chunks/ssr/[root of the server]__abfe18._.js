@@ -1187,7 +1187,7 @@ function Curriculum() {
                                 className: "space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-semibold mb-6",
+                                        className: "text-xl font-semibold mb-6 sm:text-left text-center",
                                         children: "Основни нива"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Curriculum.tsx",
@@ -1210,10 +1210,10 @@ function Curriculum() {
                                                 duration: 0.3,
                                                 delay: index * 0.1
                                             },
-                                            className: "bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated",
+                                            className: "bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex sm:flex-row flex-col gap-4 justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-gray-300",
+                                                    className: "text-gray-300 text-center sm:text-left",
                                                     children: lecture.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Curriculum.tsx",
@@ -1228,6 +1228,7 @@ function Curriculum() {
                   transition-optimized
                   group-hover:border-white/30
                   group-hover:text-white
+                  whitespace-nowrap
                 `,
                                                     children: lecture.level
                                                 }, void 0, false, {
@@ -1257,14 +1258,14 @@ function Curriculum() {
                                                 duration: 0.3,
                                                 delay: (index + lectures.length) * 0.1
                                             },
-                                            className: "bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated",
+                                            className: "bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex sm:flex-row flex-col gap-4 justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-gray-300",
+                                                    className: "text-gray-300 text-center sm:text-left",
                                                     children: bonus.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Curriculum.tsx",
-                                                    lineNumber: 193,
+                                                    lineNumber: 194,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1272,17 +1273,18 @@ function Curriculum() {
                   text-sm px-4 py-1.5 rounded-full 
                   bg-gradient-to-r ${bonus.color}
                   transition-optimized
+                  whitespace-nowrap
                 `,
                                                     children: bonus.bonus
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Curriculum.tsx",
-                                                    lineNumber: 194,
+                                                    lineNumber: 195,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/src/components/Curriculum.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 183,
                                             columnNumber: 15
                                         }, this))
                                 ]
@@ -1320,7 +1322,7 @@ function Curriculum() {
                                                 priority: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Curriculum.tsx",
-                                                lineNumber: 214,
+                                                lineNumber: 216,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1328,24 +1330,24 @@ function Curriculum() {
                                                 children: "Структурирано обучение"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Curriculum.tsx",
-                                                lineNumber: 222,
+                                                lineNumber: 224,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Curriculum.tsx",
-                                        lineNumber: 213,
+                                        lineNumber: 215,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-6",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-300 text-lg mb-4",
+                                                className: "text-gray-300 text-lg mb-4 sm:text-left text-center",
                                                 children: "Програма с всичко от обработка на видео за начинаещи до напреднали и всичко около монетизирането на вашите умения."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Curriculum.tsx",
-                                                lineNumber: 228,
+                                                lineNumber: 230,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1369,29 +1371,29 @@ function Curriculum() {
                                                         children: "КЪМ КУРСА"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Curriculum.tsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 240,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Curriculum.tsx",
-                                                    lineNumber: 232,
+                                                    lineNumber: 234,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Curriculum.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 233,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Curriculum.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 229,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Curriculum.tsx",
-                                lineNumber: 206,
+                                lineNumber: 208,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1873,7 +1875,7 @@ function Pricing() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-4",
+                                        className: "flex flex-col sm:flex-row items-center gap-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-2xl text-gray-300",
@@ -1884,61 +1886,70 @@ function Pricing() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center",
+                                                className: "flex flex-col sm:flex-row items-center gap-2 sm:gap-4",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text",
-                                                        children: "60 лв"
-                                                    }, void 0, false, {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text",
+                                                                children: "60 лв"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Pricing.tsx",
+                                                                lineNumber: 98,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xl text-gray-400 ml-2",
+                                                                children: "/ месец"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Pricing.tsx",
+                                                                lineNumber: 99,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/Pricing.tsx",
                                                         lineNumber: 97,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-xl text-gray-400 ml-2",
-                                                        children: "/ месец"
+                                                        className: "text-2xl text-gray-400",
+                                                        children: "или"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Pricing.tsx",
-                                                        lineNumber: 98,
+                                                        lineNumber: 101,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text",
+                                                                children: "600 лв"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Pricing.tsx",
+                                                                lineNumber: 103,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-xl text-gray-400 ml-2",
+                                                                children: "/ година"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Pricing.tsx",
+                                                                lineNumber: 104,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/Pricing.tsx",
+                                                        lineNumber: 102,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Pricing.tsx",
                                                 lineNumber: 96,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-2xl text-gray-400",
-                                                children: "или"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Pricing.tsx",
-                                                lineNumber: 100,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text",
-                                                        children: "600 лв"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Pricing.tsx",
-                                                        lineNumber: 102,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-xl text-gray-400 ml-2",
-                                                        children: "/ година"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Pricing.tsx",
-                                                        lineNumber: 103,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/Pricing.tsx",
-                                                lineNumber: 101,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -1978,32 +1989,32 @@ function Pricing() {
                                         duration: 0.3,
                                         delay: index * 0.1
                                     },
-                                    className: "group flex justify-between items-center bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 mb-4 border border-gray-800/50 hover:border-[#7D4CC3]/50 transition-optimized hardware-accelerated",
+                                    className: "group flex flex-col sm:flex-row gap-4 justify-between items-center bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 mb-4 border border-gray-800/50 hover:border-[#7D4CC3]/50 transition-optimized hardware-accelerated",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-gray-300 text-lg",
+                                            className: "text-gray-300 text-lg text-center sm:text-left",
                                             children: benefit.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Pricing.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: `
-                px-4 py-2 rounded-xl transition-optimized
+                px-4 py-2 rounded-xl transition-optimized whitespace-nowrap
                 ${benefit.highlight ? 'bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-white' : 'bg-[#1a1a1a]/50 text-gray-300'}
                 font-semibold
               `,
                                             children: benefit.value
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Pricing.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 125,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/src/components/Pricing.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 113,
                                     columnNumber: 13
                                 }, this)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2041,23 +2052,23 @@ function Pricing() {
                                         children: "ЗАПОЧНИ СЕГА"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Pricing.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 150,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Pricing.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 144,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Pricing.tsx",
-                                lineNumber: 135,
+                                lineNumber: 137,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Pricing.tsx",
-                        lineNumber: 109,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this)
                 ]
@@ -2123,6 +2134,7 @@ const testimonials = [
 ];
 function Testimonials() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "testimonials",
         className: "relative py-24 overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2293,38 +2305,38 @@ function Testimonials() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
-                            y: 20
+                            y: 10
                         },
                         whileInView: {
                             opacity: 1,
                             y: 0
                         },
                         viewport: {
-                            once: true
+                            once: true,
+                            margin: "-50px"
                         },
                         transition: {
-                            duration: 0.5
+                            duration: 0.3
                         },
-                        className: "mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto hardware-accelerated",
+                        className: "mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl",
+                                className: "relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                     controls: true,
-                                    className: "w-full h-full object-cover transition-optimized",
+                                    className: "w-full h-full object-cover",
                                     preload: "metadata",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                                            src: "/img/rek.mp4",
-                                            type: "video/mp4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Testimonials.tsx",
-                                            lineNumber: 116,
-                                            columnNumber: 15
-                                        }, this),
-                                        "Your browser does not support the video tag."
-                                    ]
-                                }, void 0, true, {
+                                    playsInline: true,
+                                    poster: "/img/video-testimonial-1.jpg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                        src: "/img/rek.mp4",
+                                        type: "video/mp4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Testimonials.tsx",
+                                        lineNumber: 118,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/Testimonials.tsx",
                                     lineNumber: 111,
                                     columnNumber: 13
@@ -2335,57 +2347,55 @@ function Testimonials() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl",
+                                className: "relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                     controls: true,
-                                    className: "w-full h-full object-cover transition-optimized",
+                                    className: "w-full h-full object-cover",
                                     preload: "metadata",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                                            src: "/img/video222.mp4",
-                                            type: "video/mp4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Testimonials.tsx",
-                                            lineNumber: 128,
-                                            columnNumber: 15
-                                        }, this),
-                                        "Your browser does not support the video tag."
-                                    ]
-                                }, void 0, true, {
+                                    playsInline: true,
+                                    poster: "/img/video-testimonial-2.jpg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                        src: "/img/video222.mp4",
+                                        type: "video/mp4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Testimonials.tsx",
+                                        lineNumber: 131,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/Testimonials.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Testimonials.tsx",
-                                lineNumber: 122,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl",
+                                className: "relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                     controls: true,
-                                    className: "w-full h-full object-cover transition-optimized",
+                                    className: "w-full h-full object-cover",
                                     preload: "metadata",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
-                                            src: "/img/video1111.mp4",
-                                            type: "video/mp4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Testimonials.tsx",
-                                            lineNumber: 140,
-                                            columnNumber: 15
-                                        }, this),
-                                        "Your browser does not support the video tag."
-                                    ]
-                                }, void 0, true, {
+                                    playsInline: true,
+                                    poster: "/img/video-testimonial-3.jpg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                        src: "/img/video1111.mp4",
+                                        type: "video/mp4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Testimonials.tsx",
+                                        lineNumber: 144,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/Testimonials.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Testimonials.tsx",
-                                lineNumber: 134,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -2415,17 +2425,17 @@ function Testimonials() {
                                 children: "КЪМ КУРСА"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Testimonials.tsx",
-                                lineNumber: 153,
+                                lineNumber: 156,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Testimonials.tsx",
-                            lineNumber: 147,
+                            lineNumber: 150,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Testimonials.tsx",
-                        lineNumber: 146,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this)
                 ]

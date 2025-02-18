@@ -150,7 +150,7 @@ export default function Curriculum() {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Left Column - Course Structure */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold mb-6">Основни нива</h3>
+            <h3 className="text-xl font-semibold mb-6 sm:text-left text-center">Основни нива</h3>
             {lectures.map((lecture, index) => (
               <motion.div
                 key={index}
@@ -161,9 +161,9 @@ export default function Curriculum() {
                   duration: 0.3,
                   delay: index * 0.1 
                 }}
-                className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated"
+                className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex sm:flex-row flex-col gap-4 justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated"
               >
-                <span className="text-gray-300">{lecture.title}</span>
+                <span className="text-gray-300 text-center sm:text-left">{lecture.title}</span>
                 <span className={`
                   text-sm text-gray-300 px-4 py-1.5 rounded-full 
                   border ${lecture.color}
@@ -171,6 +171,7 @@ export default function Curriculum() {
                   transition-optimized
                   group-hover:border-white/30
                   group-hover:text-white
+                  whitespace-nowrap
                 `}>
                   {lecture.level}
                 </span>
@@ -188,13 +189,14 @@ export default function Curriculum() {
                   duration: 0.3,
                   delay: (index + lectures.length) * 0.1 
                 }}
-                className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated"
+                className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 flex sm:flex-row flex-col gap-4 justify-between items-center group hover:bg-[#1a1a1a]/50 transition-optimized hardware-accelerated"
               >
-                <span className="text-gray-300">{bonus.title}</span>
+                <span className="text-gray-300 text-center sm:text-left">{bonus.title}</span>
                 <span className={`
                   text-sm px-4 py-1.5 rounded-full 
                   bg-gradient-to-r ${bonus.color}
                   transition-optimized
+                  whitespace-nowrap
                 `}>
                   {bonus.bonus}
                 </span>
@@ -225,7 +227,7 @@ export default function Curriculum() {
             </div>
             
             <div className="mt-6">
-              <p className="text-gray-300 text-lg mb-4">
+              <p className="text-gray-300 text-lg mb-4 sm:text-left text-center">
                 Програма с всичко от обработка на видео за начинаещи до напреднали и всичко около монетизирането на вашите умения.
               </p>
               <div className="text-center">

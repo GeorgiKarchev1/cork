@@ -91,16 +91,18 @@ export default function Pricing() {
           <div className="flex flex-col items-center gap-4">
             <span className="text-3xl text-gray-400 line-through opacity-50">3,890 лв.</span>
             
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <span className="text-2xl text-gray-300">Само за</span>
-              <div className="flex items-center">
-                <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">60 лв</span>
-                <span className="text-xl text-gray-400 ml-2">/ месец</span>
-              </div>
-              <span className="text-2xl text-gray-400">или</span>
-              <div className="flex items-center">
-                <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">600 лв</span>
-                <span className="text-xl text-gray-400 ml-2">/ година</span>
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                <div className="flex items-center">
+                  <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">60 лв</span>
+                  <span className="text-xl text-gray-400 ml-2">/ месец</span>
+                </div>
+                <span className="text-2xl text-gray-400">или</span>
+                <div className="flex items-center">
+                  <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">600 лв</span>
+                  <span className="text-xl text-gray-400 ml-2">/ година</span>
+                </div>
               </div>
             </div>
           </div>
@@ -117,11 +119,11 @@ export default function Pricing() {
                 duration: 0.3,
                 delay: index * 0.1 
               }}
-              className="group flex justify-between items-center bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 mb-4 border border-gray-800/50 hover:border-[#7D4CC3]/50 transition-optimized hardware-accelerated"
+              className="group flex flex-col sm:flex-row gap-4 justify-between items-center bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 mb-4 border border-gray-800/50 hover:border-[#7D4CC3]/50 transition-optimized hardware-accelerated"
             >
-              <span className="text-gray-300 text-lg">{benefit.title}</span>
+              <span className="text-gray-300 text-lg text-center sm:text-left">{benefit.title}</span>
               <span className={`
-                px-4 py-2 rounded-xl transition-optimized
+                px-4 py-2 rounded-xl transition-optimized whitespace-nowrap
                 ${benefit.highlight 
                   ? 'bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-white'
                   : 'bg-[#1a1a1a]/50 text-gray-300'}

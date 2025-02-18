@@ -37,7 +37,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section id="testimonials" className="relative py-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Оптимизирани градиентни орбове */}
@@ -100,45 +100,48 @@ export default function Testimonials() {
 
         {/* Videos Grid */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto hardware-accelerated"
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.3 }}
+          className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto"
         >
           {/* Video 1 */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform">
             <video
               controls
-              className="w-full h-full object-cover transition-optimized"
+              className="w-full h-full object-cover"
               preload="metadata"
+              playsInline
+              poster="/img/video-testimonial-1.jpg"
             >
               <source src="/img/rek.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           </div>
 
           {/* Video 2 */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform">
             <video
               controls
-              className="w-full h-full object-cover transition-optimized"
+              className="w-full h-full object-cover"
               preload="metadata"
+              playsInline
+              poster="/img/video-testimonial-2.jpg"
             >
               <source src="/img/video222.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           </div>
 
           {/* Video 3 */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform">
             <video
               controls
-              className="w-full h-full object-cover transition-optimized"
+              className="w-full h-full object-cover"
               preload="metadata"
+              playsInline
+              poster="/img/video-testimonial-3.jpg"
             >
               <source src="/img/video1111.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           </div>
         </motion.div>
