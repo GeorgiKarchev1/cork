@@ -73,6 +73,9 @@ export default function Instructors() {
                   alt={instructor.name}
                   fill
                   className="object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  quality={75}
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">{instructor.name}</h3>
