@@ -29,7 +29,7 @@ export default function FAQ() {
   const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
-    const newStars = Array.from({ length: 30 }, () => ({
+    const newStars = Array.from({ length: 20 }, () => ({
       top: Math.random() * 100,
       left: Math.random() * 100,
       size: Math.random() * 3 + 1,
@@ -44,14 +44,14 @@ export default function FAQ() {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient orbs */}
-        <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#7D4CC3]/20 rounded-full blur-[120px] translate-x-1/2" />
-        <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4" />
+        <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#7D4CC3]/20 rounded-full blur-[120px] translate-x-1/2 hardware-accelerated" />
+        <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4 hardware-accelerated" />
         
         {/* Animated Stars */}
         {stars.map((star, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-white"
+            className="absolute rounded-full bg-white hardware-accelerated"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ 
               opacity: [0.1, 0.5, 0.1],
@@ -61,7 +61,8 @@ export default function FAQ() {
               duration: star.duration,
               delay: star.delay,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: "easeInOut",
+              repeatType: "reverse"
             }}
             style={{
               top: `${star.top}%`,
@@ -78,7 +79,8 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.4 }}
+          className="text-center mb-16 hardware-accelerated"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gray-300">Често задавани</span>
@@ -96,8 +98,11 @@ export default function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800/50 hover:border-[#7D4CC3]/50 transition-all duration-300"
+              transition={{ 
+                duration: 0.3,
+                delay: index * 0.1 
+              }}
+              className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800/50 hover:border-[#7D4CC3]/50 transition-optimized hardware-accelerated"
             >
               <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">
                 {item.question}
@@ -114,20 +119,23 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          transition={{ duration: 0.4 }}
+          className="text-center mt-16 hardware-accelerated"
         >
           <a 
             href="https://whop.com/discover/the-agency-bg/"
             target="_blank"
             rel="noopener noreferrer"
+            className="hardware-accelerated"
           >
-            {/* <motion.button
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-all duration-300 hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]"
+              transition={{ duration: 0.2 }}
+              className="bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]"
             >
               ЗАПОЧНИ СЕГА
-            </motion.button> */}
+            </motion.button>
           </a>
         </motion.div>
       </div>

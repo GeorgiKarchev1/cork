@@ -28,10 +28,10 @@ export default function Instructors() {
     <section className="relative -mt-16 pt-32 pb-24 overflow-hidden">
       {/* Fancy Background */}
       <div className="absolute inset-0">
-        {/* Gradient Orbs */}
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#7D4CC3]/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-[#F4A836]/10 rounded-full blur-[100px] translate-x-1/2" />
-        <div className="absolute top-1/3 left-0 w-[450px] h-[450px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4" />
+        {/* Оптимизирани градиентни орбове */}
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#7D4CC3]/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 hardware-accelerated" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-[#F4A836]/10 rounded-full blur-[100px] translate-x-1/2 hardware-accelerated" />
+        <div className="absolute top-1/3 left-0 w-[450px] h-[450px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4 hardware-accelerated" />
         <div className="absolute inset-0 bg-[#0A0A32]" />
       </div>
 
@@ -42,7 +42,8 @@ export default function Instructors() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            transition={{ duration: 0.4 }}
+            className="text-4xl md:text-5xl font-bold mb-6 hardware-accelerated"
           >
             За вашите инструктори
           </motion.h2>
@@ -50,7 +51,8 @@ export default function Instructors() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-gray-400 text-lg"
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="text-gray-300 text-lg hardware-accelerated"
           >
             Ние сме екип от опитни професионалисти, посветени на това да ви помогнем да постигнете изключителни резултати във видео обработката и създаването на съдържание.
           </motion.p>
@@ -64,15 +66,18 @@ export default function Instructors() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-              className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800/50"
+              transition={{ 
+                duration: 0.4,
+                delay: index * 0.1 
+              }}
+              className="bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800/50 transition-optimized hardware-accelerated hover:border-[#7D4CC3]/50"
             >
-              <div className="relative h-72 mb-6 rounded-xl overflow-hidden">
+              <div className="relative h-72 mb-6 rounded-xl overflow-hidden hardware-accelerated">
                 <Image
                   src={instructor.image}
                   alt={instructor.name}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-optimized"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 33vw"
                   quality={75}
@@ -92,7 +97,8 @@ export default function Instructors() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto"
+          transition={{ duration: 0.4 }}
+          className="text-center max-w-3xl mx-auto hardware-accelerated"
         >
           <p className="text-2xl font-bold text-[#F4A836] mb-4">
             АЛГОРИТЪМЪТ НА YOUTUBE ЗАПОЧВА ДА ПРЕДПОЧИТА САМО ВИСОКОКАЧЕСТВЕНИ ВИДЕА, КОИТО ИЗИСКВАТ ВИСОКИ УМЕНИЯ!

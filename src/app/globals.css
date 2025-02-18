@@ -44,14 +44,38 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Optimize animations for mobile */
+/* Animation utilities */
+.hardware-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+
+.transition-optimized {
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+
+.animation-optimized {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+/* Optimize mobile animations */
 @media (max-width: 768px) {
   .animate-on-scroll {
     will-change: auto;
+    transform: translateZ(0);
+  }
+  
+  .transition-optimized {
+    transition-duration: 200ms;
   }
   
   * {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
   }
 }

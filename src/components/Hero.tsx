@@ -57,11 +57,11 @@ export default function Hero() {
         <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-[#7D4CC3]/20 rounded-full blur-[120px] -translate-x-1/2" />
         <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-[#F4A836]/10 rounded-full blur-[100px] translate-x-1/4" />
         
-        {/* Animated Stars */}
+        {/* Animated Stars - Оптимизирани */}
         {stars.map((star, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-white"
+            className="absolute rounded-full bg-white hardware-accelerated"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ 
               opacity: [0.1, 0.5, 0.1],
@@ -71,7 +71,8 @@ export default function Hero() {
               duration: star.duration,
               delay: star.delay,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: "easeInOut",
+              repeatType: "reverse"
             }}
             style={{
               top: `${star.top}%`,
@@ -82,16 +83,13 @@ export default function Hero() {
           />
         ))}
 
-        {/* Floating Particles */}
-        <div className="absolute inset-0">
+        {/* Floating Particles - Оптимизирани */}
+        <div className="absolute inset-0 pointer-events-none">
           {particles.map((particle, i) => (
             <motion.div
               key={`particle-${i}`}
-              className="absolute w-1 h-1 bg-[#7D4CC3]/30 rounded-full"
-              initial={{ 
-                x: particle.initialX,
-                y: particle.initialY
-              }}
+              className="absolute w-1 h-1 bg-[#7D4CC3]/30 rounded-full hardware-accelerated"
+              initial={{ x: particle.initialX, y: particle.initialY }}
               animate={{
                 x: particle.targetX,
                 y: particle.targetY
@@ -99,6 +97,7 @@ export default function Hero() {
               transition={{
                 duration: particle.duration,
                 repeat: Infinity,
+                repeatType: "reverse",
                 ease: "linear"
               }}
             />
@@ -112,7 +111,8 @@ export default function Hero() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex justify-center items-center mb-8"
+          className="flex justify-center items-center mb-8 hardware-accelerated"
+          transition={{ duration: 0.5 }}
         >
           <div className="flex -space-x-2">
             {[1, 2, 3, 4].map((_, i) => (
@@ -139,7 +139,8 @@ export default function Hero() {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl backdrop-blur-sm"
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-center max-w-4xl backdrop-blur-sm hardware-accelerated"
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gray-300">Готови ли сте да</span>
@@ -156,11 +157,13 @@ export default function Hero() {
               href="https://whop.com/discover/the-agency-bg/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hardware-accelerated"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-all duration-300 hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]"
+                transition={{ duration: 0.2 }}
+                className="bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]"
               >
                 КЪМ КУРСА
               </motion.button>

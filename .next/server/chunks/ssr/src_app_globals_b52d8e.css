@@ -582,8 +582,8 @@ img, video {
   max-height: 0;
 }
 
-.max-h-\[300px\] {
-  max-height: 300px;
+.max-h-\[400px\] {
+  max-height: 400px;
 }
 
 .min-h-screen {
@@ -685,11 +685,6 @@ img, video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-y-4 {
-  --tw-translate-y: -1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-translate-y-full {
   --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -737,6 +732,10 @@ img, video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform-gpu {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes pulse {
@@ -1409,14 +1408,37 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hardware-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.transition-optimized {
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+
+.animation-optimized {
+  animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+  will-change: transform, opacity;
+}
+
 @media (width <= 768px) {
   .animate-on-scroll {
     will-change: auto;
+    transform: translateZ(0);
+  }
+
+  .transition-optimized {
+    transition-duration: .2s;
   }
 
   * {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 

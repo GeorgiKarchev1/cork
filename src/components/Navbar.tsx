@@ -121,41 +121,42 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu with improved performance */}
+        {/* Mobile Menu с оптимизирани анимации */}
         <div 
-          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out transform ${
-            isMenuOpen ? 'max-h-[300px] opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-4'
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out transform-gpu ${
+            isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
           }`}
           style={{
-            willChange: isMenuOpen ? 'transform, opacity, max-height' : 'auto',
+            willChange: 'transform, opacity, max-height',
+            transform: 'translateZ(0)',
           }}
         >
           <div className="flex flex-col space-y-4 pb-4 px-4">
-            {/* Menu items with hardware acceleration */}
+            {/* Оптимизирани бутони в менюто */}
             <button 
               onClick={() => scrollToSection('features')}
-              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform hover:translate-x-2 duration-200"
+              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200"
               style={{ transform: 'translateZ(0)' }}
             >
               Преимущества
             </button>
             <button 
               onClick={() => scrollToSection('curriculum')}
-              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform hover:translate-x-2 duration-200"
+              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200"
               style={{ transform: 'translateZ(0)' }}
             >
               Съдържание
             </button>
             <button 
               onClick={() => scrollToSection('pricing')}
-              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform hover:translate-x-2 duration-200"
+              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200"
               style={{ transform: 'translateZ(0)' }}
             >
               Цени
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
-              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform hover:translate-x-2 duration-200"
+              className="text-gray-200 hover:text-white transition-colors text-lg font-semibold transform-gpu hover:translate-x-2 duration-200"
               style={{ transform: 'translateZ(0)' }}
             >
               Успехи
@@ -164,7 +165,8 @@ export default function Navbar() {
               href="https://whop.com/discover/the-agency-bg/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition text-lg font-semibold shadow-lg hover:shadow-amber-500/20 text-center"
+              className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-colors text-lg font-semibold shadow-lg hover:shadow-amber-500/20 text-center transform-gpu"
+              style={{ transform: 'translateZ(0)' }}
             >
               Запишете се сега
             </a>
