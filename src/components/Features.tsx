@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useIsMobile } from '../hooks/useIsMobile'
+import { optimizedTransition, optimizedVariants } from './shared/AnimationConfig'
 
 interface Dot {
   top: number;

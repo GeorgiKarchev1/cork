@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { optimizedTransition, optimizedVariants } from './shared/AnimationConfig'
 
 const testimonials = [
   {
@@ -37,7 +38,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-24 overflow-hidden">
+    <section className="relative py-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Оптимизирани градиентни орбове */}
@@ -49,10 +50,11 @@ export default function Testimonials() {
       <div className="container relative mx-auto px-4">
         {/* Header */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={optimizedVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
+          transition={optimizedTransition}
           className="text-center mb-16 hardware-accelerated"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -69,8 +71,9 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={optimizedVariants}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
               transition={{ 
                 duration: 0.4,
@@ -100,10 +103,11 @@ export default function Testimonials() {
 
         {/* Videos Grid */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={optimizedVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.3 }}
+          transition={optimizedTransition}
           className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto"
         >
           {/* Video 1 */}
@@ -156,7 +160,7 @@ export default function Testimonials() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
+              transition={optimizedTransition}
               className="bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]"
             >
               КЪМ КУРСА
