@@ -1,0 +1,19 @@
+{
+  "name": "The Agency",
+  "short_name": "The Agency",
+  "icons": [
+    {
+      "src": "/img/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/img/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#0A0A32",
+  "background_color": "#0A0A32",
+  "display": "standalone"
+} 

@@ -486,87 +486,96 @@ function Hero() {
         setParticles(newParticles);
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative min-h-screen pt-14 xs:pt-16 sm:pt-20 lg:pt-24 flex flex-col items-center justify-start xs:justify-center px-3 xs:px-4 pb-6 xs:pb-8 sm:pb-16",
+        className: "relative min-h-screen pt-14 xs:pt-16 sm:pt-20 lg:pt-24 flex flex-col items-center justify-start xs:justify-center px-3 xs:px-4 pb-6 xs:pb-8 sm:pb-16 overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-1/4 left-0 w-[200px] xs:w-[300px] sm:w-[600px] h-[200px] xs:h-[300px] sm:h-[600px] bg-[#7D4CC3]/20 rounded-full blur-[60px] xs:blur-[80px] sm:blur-[120px] -translate-x-1/2"
+                        className: "fixed top-1/4 left-0 w-[200px] xs:w-[300px] sm:w-[600px] h-[200px] xs:h-[300px] sm:h-[600px] bg-[#7D4CC3]/20 rounded-full blur-[60px] xs:blur-[80px] sm:blur-[120px] -translate-x-1/2 z-0"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.tsx",
                         lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-1/4 right-0 w-[150px] xs:w-[250px] sm:w-[500px] h-[150px] xs:h-[250px] sm:h-[500px] bg-[#F4A836]/10 rounded-full blur-[40px] xs:blur-[60px] sm:blur-[100px] translate-x-1/4"
+                        className: "fixed bottom-1/4 right-0 w-[150px] xs:w-[250px] sm:w-[500px] h-[150px] xs:h-[250px] sm:h-[500px] bg-[#F4A836]/10 rounded-full blur-[40px] xs:blur-[60px] sm:blur-[100px] translate-x-1/4 z-0"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.tsx",
                         lineNumber: 58,
                         columnNumber: 9
                     }, this),
-                    stars.map((star, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "absolute rounded-full bg-white hardware-accelerated",
-                            initial: {
-                                opacity: 0,
-                                scale: 0
-                            },
-                            animate: {
-                                opacity: [
-                                    0.1,
-                                    0.5,
-                                    0.1
-                                ],
-                                scale: [
-                                    1,
-                                    1.2,
-                                    1
-                                ]
-                            },
-                            transition: {
-                                duration: star.duration,
-                                delay: star.delay,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                                repeatType: "reverse"
-                            },
-                            style: {
-                                top: `${star.top}%`,
-                                left: `${star.left}%`,
-                                width: `${star.size}px`,
-                                height: `${star.size}px`
-                            }
-                        }, i, false, {
-                            fileName: "[project]/src/components/Hero.tsx",
-                            lineNumber: 62,
-                            columnNumber: 11
-                        }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 pointer-events-none",
-                        children: particles.map((particle, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "absolute w-1 h-1 bg-[#7D4CC3]/30 rounded-full hardware-accelerated",
-                                initial: {
-                                    x: particle.initialX,
-                                    y: particle.initialY
-                                },
-                                animate: {
-                                    x: particle.targetX,
-                                    y: particle.targetY
-                                },
-                                transition: {
-                                    duration: particle.duration,
-                                    repeat: Infinity,
-                                    repeatType: "reverse",
-                                    ease: "linear"
-                                }
-                            }, `particle-${i}`, false, {
+                        className: "absolute inset-0 z-1",
+                        children: [
+                            stars.map((star, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    className: "absolute rounded-full bg-white hardware-accelerated",
+                                    initial: {
+                                        opacity: 0,
+                                        scale: 0
+                                    },
+                                    animate: {
+                                        opacity: [
+                                            0.1,
+                                            0.5,
+                                            0.1
+                                        ],
+                                        scale: [
+                                            1,
+                                            1.2,
+                                            1
+                                        ]
+                                    },
+                                    transition: {
+                                        duration: star.duration,
+                                        delay: star.delay,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        repeatType: "reverse"
+                                    },
+                                    style: {
+                                        top: `${star.top}%`,
+                                        left: `${star.left}%`,
+                                        width: `${star.size}px`,
+                                        height: `${star.size}px`
+                                    }
+                                }, i, false, {
+                                    fileName: "[project]/src/components/Hero.tsx",
+                                    lineNumber: 64,
+                                    columnNumber: 13
+                                }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-0 pointer-events-none",
+                                children: particles.map((particle, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        className: "absolute w-1 h-1 bg-[#7D4CC3]/30 rounded-full hardware-accelerated",
+                                        initial: {
+                                            x: particle.initialX,
+                                            y: particle.initialY
+                                        },
+                                        animate: {
+                                            x: particle.targetX,
+                                            y: particle.targetY
+                                        },
+                                        transition: {
+                                            duration: particle.duration,
+                                            repeat: Infinity,
+                                            repeatType: "reverse",
+                                            ease: "linear"
+                                        }
+                                    }, `particle-${i}`, false, {
+                                        fileName: "[project]/src/components/Hero.tsx",
+                                        lineNumber: 91,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
                                 lineNumber: 89,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/components/Hero.tsx",
-                        lineNumber: 87,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this)
                 ]
@@ -576,13 +585,13 @@ function Hero() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative flex flex-col items-center w-full max-w-4xl mx-auto mt-4 xs:mt-0",
+                className: "relative flex flex-col items-center w-full max-w-4xl mx-auto mt-4 xs:mt-0 z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                         variants: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedVariants"],
                         initial: "hidden",
                         animate: "visible",
-                        className: "flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 hardware-accelerated",
+                        className: "flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 hardware-accelerated z-20",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex -space-x-1 xs:-space-x-1.5 sm:-space-x-2",
@@ -601,17 +610,17 @@ function Hero() {
                                             className: "w-full h-full object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Hero.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this)
                                     }, i, false, {
                                         fileName: "[project]/src/components/Hero.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
-                                lineNumber: 117,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -621,18 +630,18 @@ function Hero() {
                                     children: "150+ човека"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
-                                lineNumber: 133,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Hero.tsx",
-                        lineNumber: 111,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -642,94 +651,104 @@ function Hero() {
                         transition: {
                             delay: 0.2
                         },
-                        className: "text-center max-w-4xl backdrop-blur-sm hardware-accelerated px-2 xs:px-4",
+                        className: "text-center max-w-4xl backdrop-blur-sm hardware-accelerated px-2 xs:px-4 z-20",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-3 xs:mb-4 sm:mb-6 leading-tight",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-300",
+                                        className: "text-gray-300 !important",
                                         children: "Новата ера на"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.tsx",
-                                        lineNumber: 147,
+                                        lineNumber: 150,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/components/Hero.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text",
+                                                className: "bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text !important",
                                                 children: "видео обработката"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 153,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-white",
+                                                className: "text-white !important",
                                                 children: " в България започва тук"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 154,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 152,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.tsx",
-                                lineNumber: 146,
+                                lineNumber: 149,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-gray-300 text-sm xs:text-base sm:text-xl mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed",
+                                className: "text-gray-300 !important text-sm xs:text-base sm:text-xl mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed",
                                 children: 'Независимо дали се опитвате да изградите свой собствен YouTube канал, да изкарвате пари от видеообработка, или сте фрийлансър, "Агенцията" ще ви издигне на следващото ниво.'
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
-                                lineNumber: 154,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-center",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                    whileHover: {
-                                        scale: 1.05
-                                    },
-                                    whileTap: {
-                                        scale: 0.95
-                                    },
-                                    transition: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedTransition"],
-                                    className: "bg-[#7D4CC3] px-8 py-3 rounded-lg text-white text-base font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)] hardware-accelerated",
-                                    children: "КЪМ КУРСА"
+                                className: "flex justify-center z-20",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "https://whop.com/the-agency-bg/?trackingLinkRoute=course",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "hardware-accelerated",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                        whileHover: {
+                                            scale: 1.05
+                                        },
+                                        whileTap: {
+                                            scale: 0.95
+                                        },
+                                        transition: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedTransition"],
+                                        className: "bg-[#7D4CC3] !important px-8 py-3 rounded-lg text-white text-base font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)] hardware-accelerated",
+                                        children: "КЪМ КУРСА"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Hero.tsx",
+                                        lineNumber: 170,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 164,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
-                                lineNumber: 159,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Hero.tsx",
-                        lineNumber: 139,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Hero.tsx",
-                lineNumber: 109,
+                lineNumber: 112,
                 columnNumber: 7
             }, this)
         ]
@@ -972,7 +991,7 @@ function Features() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "jsx-435c07b2ee026586" + " " + "text-center mt-12",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "https://whop.com/discover/the-agency-bg/",
+                                href: "https://whop.com/the-agency-bg/?trackingLinkRoute=course",
                                 target: "_blank",
                                 rel: "noopener noreferrer",
                                 className: "jsx-435c07b2ee026586" + " " + "hardware-accelerated",
@@ -987,7 +1006,7 @@ function Features() {
                                         duration: 0.2
                                     },
                                     className: "bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]",
-                                    children: "КЪМ КУРСА"
+                                    children: "ЗАПИШЕТЕ СЕ СЕГА"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Features.tsx",
                                     lineNumber: 144,
@@ -1474,8 +1493,10 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/shared/AnimationConfig.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -1504,31 +1525,31 @@ function Instructors() {
         className: "relative -mt-16 pt-32 pb-24 overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0",
+                className: "absolute inset-0 z-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-0 left-0 w-[500px] h-[500px] bg-[#7D4CC3]/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 hardware-accelerated"
+                        className: "absolute inset-0 bg-[#0A0A32] z-0"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Instructors.tsx",
                         lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-1/2 right-0 w-[400px] h-[400px] bg-[#F4A836]/10 rounded-full blur-[100px] translate-x-1/2 hardware-accelerated"
+                        className: "fixed top-0 left-0 w-[500px] h-[500px] bg-[#7D4CC3]/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 z-1"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Instructors.tsx",
                         lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-1/3 left-0 w-[450px] h-[450px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4 hardware-accelerated"
+                        className: "fixed top-1/2 right-0 w-[400px] h-[400px] bg-[#F4A836]/10 rounded-full blur-[100px] translate-x-1/2 z-1"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Instructors.tsx",
                         lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-[#0A0A32]"
+                        className: "fixed top-1/3 left-0 w-[450px] h-[450px] bg-[#F4A836]/10 rounded-full blur-[100px] -translate-x-1/4 z-1"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Instructors.tsx",
                         lineNumber: 35,
@@ -1537,62 +1558,35 @@ function Instructors() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Instructors.tsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container relative mx-auto px-4",
+                className: "container relative mx-auto px-4 z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "text-center max-w-3xl mx-auto mb-20",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                initial: {
-                                    opacity: 0,
-                                    y: 20
-                                },
-                                whileInView: {
-                                    opacity: 1,
-                                    y: 0
-                                },
-                                viewport: {
-                                    once: true
-                                },
-                                transition: {
-                                    duration: 0.4
-                                },
-                                className: "text-4xl md:text-5xl font-bold mb-6 hardware-accelerated",
-                                children: "За вашите инструктори"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/Instructors.tsx",
-                                lineNumber: 41,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
-                                initial: {
-                                    opacity: 0,
-                                    y: 20
-                                },
-                                whileInView: {
-                                    opacity: 1,
-                                    y: 0
-                                },
-                                viewport: {
-                                    once: true
-                                },
-                                transition: {
-                                    duration: 0.4,
-                                    delay: 0.1
-                                },
-                                className: "text-gray-300 text-lg hardware-accelerated",
-                                children: "Ние сме екип от опитни професионалисти, посветени на това да ви помогнем да постигнете изключителни резултати във видео обработката и създаването на съдържание."
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/Instructors.tsx",
-                                lineNumber: 50,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
+                            initial: {
+                                opacity: 0,
+                                y: 20
+                            },
+                            whileInView: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            viewport: {
+                                once: true
+                            },
+                            transition: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedTransition"],
+                            className: "text-4xl md:text-5xl font-bold mb-6 text-white !important",
+                            children: "За вашите инструктори"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Instructors.tsx",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/components/Instructors.tsx",
                         lineNumber: 40,
                         columnNumber: 9
@@ -1612,53 +1606,53 @@ function Instructors() {
                                     once: true
                                 },
                                 transition: {
-                                    duration: 0.4,
+                                    ...__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedTransition"],
                                     delay: index * 0.1
                                 },
                                 className: "bg-[#141414]/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800/50 transition-optimized hardware-accelerated hover:border-[#7D4CC3]/50",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative h-72 mb-6 rounded-xl overflow-hidden hardware-accelerated",
+                                        className: "relative h-72 mb-6 rounded-xl overflow-hidden",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             src: instructor.image,
                                             alt: instructor.name,
                                             fill: true,
-                                            className: "object-cover transition-optimized",
+                                            className: "object-cover",
                                             loading: "lazy",
                                             sizes: "(max-width: 768px) 100vw, 33vw",
                                             quality: 75
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Instructors.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Instructors.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 72,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold mb-2",
+                                        className: "text-2xl font-bold mb-2 text-white !important",
                                         children: instructor.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Instructors.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[#F4A836] font-medium mb-4",
+                                        className: "text-[#F4A836] !important font-medium mb-4",
                                         children: instructor.role
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Instructors.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-400 leading-relaxed",
+                                        className: "text-gray-400 !important leading-relaxed",
                                         children: instructor.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Instructors.tsx",
-                                        lineNumber: 88,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1684,21 +1678,19 @@ function Instructors() {
                         viewport: {
                             once: true
                         },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "text-center max-w-3xl mx-auto hardware-accelerated",
+                        transition: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$AnimationConfig$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedTransition"],
+                        className: "text-center max-w-3xl mx-auto",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-2xl font-bold text-[#F4A836] mb-4",
+                            className: "text-2xl font-bold text-[#F4A836] !important mb-4",
                             children: "АЛГОРИТЪМЪТ НА YOUTUBE ЗАПОЧВА ДА ПРЕДПОЧИТА САМО ВИСОКОКАЧЕСТВЕНИ ВИДЕА, КОИТО ИЗИСКВАТ ВИСОКИ УМЕНИЯ!"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Instructors.tsx",
-                            lineNumber: 103,
+                            lineNumber: 100,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Instructors.tsx",
-                        lineNumber: 96,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1710,7 +1702,7 @@ function Instructors() {
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Instructors.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
@@ -2084,7 +2076,7 @@ function Pricing() {
                                 },
                                 className: "text-center mt-12 hardware-accelerated",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "https://whop.com/discover/the-agency-bg/",
+                                    href: "https://whop.com/the-agency-bg/?trackingLinkRoute=course",
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     className: "hardware-accelerated",

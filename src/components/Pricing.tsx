@@ -145,7 +145,7 @@ export default function Pricing() {
             className="text-center mt-12 hardware-accelerated"
           >
             <a 
-              href="https://whop.com/discover/the-agency-bg/"
+              href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
               target="_blank"
               rel="noopener noreferrer"
               className="hardware-accelerated"

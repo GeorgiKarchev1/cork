@@ -136,7 +136,7 @@ export default function Features() {
 
           <div className="text-center mt-12">
             <a 
-              href="https://whop.com/discover/the-agency-bg/"
+              href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
               target="_blank"
               rel="noopener noreferrer"
               className="hardware-accelerated"
@@ -147,7 +147,7 @@ export default function Features() {
                 transition={{ duration: 0.2 }}
                 className="bg-[#7D4CC3] px-8 py-4 rounded-lg text-white font-semibold shadow-[0_0_20px_rgba(125,76,195,0.3)] transition-optimized hover:shadow-[0_0_25px_rgba(125,76,195,0.4)]"
               >
-                КЪМ КУРСА
+                ЗАПИШЕТЕ СЕ СЕГА
               </motion.button>
             </a>
           </div>
