@@ -142,13 +142,20 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="text-center mt-12 hardware-accelerated"
+            className="text-center mt-12 space-y-6 hardware-accelerated"
           >
+            <p className="text-xl sm:text-2xl text-gray-300 font-medium mb-6">
+              Всички тези неща само за{' '}
+              <span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text font-bold">
+                60 лв/месец
+              </span>
+            </p>
+
             <a 
               href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
               target="_blank"
               rel="noopener noreferrer"
-              className="hardware-accelerated"
+              className="inline-block hardware-accelerated"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}

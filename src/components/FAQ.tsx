@@ -123,7 +123,7 @@ export default function FAQ() {
           className="text-center mt-16 hardware-accelerated"
         >
           <a 
-            href="https://whop.com/discover/the-agency-bg/"
+            href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
             target="_blank"
             rel="noopener noreferrer"
             className="hardware-accelerated"

@@ -36,9 +36,30 @@ const testimonials = [
   }
 ];
 
+const videoTestimonials = [
+  {
+    id: 1,
+    src: "/img/rek.mp4",
+    poster: "/img/video-testimonial-1.jpg",
+    order: 1
+  },
+  {
+    id: 2,
+    src: "/img/video222.mp4",
+    poster: "/img/video-testimonial-2.jpg",
+    order: 2
+  },
+  {
+    id: 3,
+    src: "/img/video1111.mp4",
+    poster: "/img/video-testimonial-3.jpg",
+    order: 3
+  }
+];
+
 export default function Testimonials() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section id="testimonials" className="relative py-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Оптимизирани градиентни орбове */}
@@ -101,7 +122,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Videos Grid */}
+        {/* Videos Grid - Оптимизирана фиксирана версия */}
         <motion.div
           variants={optimizedVariants}
           initial="hidden"
@@ -110,40 +131,43 @@ export default function Testimonials() {
           transition={optimizedTransition}
           className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto"
         >
-          {/* Video 1 */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform">
+          {/* Първо видео - фиксирана позиция */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform xl:col-start-1">
             <video
               controls
               className="w-full h-full object-cover"
-              preload="metadata"
+              preload="none"
               playsInline
-              poster="/img/video-testimonial-1.jpg"
+              poster="/img/video-testimonial-3.jpg"
+              controlsList="nodownload"
             >
               <source src="/img/rek.mp4" type="video/mp4" />
             </video>
           </div>
 
-          {/* Video 2 */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform">
+          {/* Второ видео - фиксирана позиция */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform xl:col-start-2">
             <video
               controls
               className="w-full h-full object-cover"
-              preload="metadata"
+              preload="none"
               playsInline
               poster="/img/video-testimonial-2.jpg"
+              controlsList="nodownload"
             >
               <source src="/img/video222.mp4" type="video/mp4" />
             </video>
           </div>
 
-          {/* Video 3 */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform">
+          {/* Трето видео - фиксирана позиция */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform xl:col-start-3">
             <video
               controls
               className="w-full h-full object-cover"
-              preload="metadata"
+              preload="none"
               playsInline
-              poster="/img/video-testimonial-3.jpg"
+              poster="/img/video-testimonial-1.jpg"
+              controlsList="nodownload"
             >
               <source src="/img/video1111.mp4" type="video/mp4" />
             </video>
@@ -152,7 +176,7 @@ export default function Testimonials() {
 
         <div className="text-center mt-12">
           <a 
-            href="https://whop.com/discover/the-agency-bg/"
+            href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
             target="_blank"
             rel="noopener noreferrer"
             className="hardware-accelerated"

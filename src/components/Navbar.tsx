@@ -94,7 +94,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <a 
-            href="https://whop.com/discover/the-agency-bg/"
+            href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:block bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 lg:px-8 py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition text-base xl:text-lg font-semibold shadow-lg hover:shadow-amber-500/20 whitespace-nowrap"

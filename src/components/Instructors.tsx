@@ -13,7 +13,7 @@ const instructors = [
   {
     name: "Радостин Георгиев",
     role: "After Effects Specialist",
-    image: "/img/radostin.png",
+    image: "/img/radonew.png",
     description: "Вашият експерт по After Effects. Той ще ви помогне да добавите динамични анимации, специални ефекти и професионален финес към вашите проекти."
   },
   {

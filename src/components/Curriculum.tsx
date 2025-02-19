@@ -51,7 +51,7 @@ const bonuses = [
     color: "from-cyan-500 to-cyan-600"
   },
   {
-    title: "Формулата за ВАЙРЪЛ видео",
+    title: "Youtube Masterclass",
     bonus: "Bonus 3",
     color: "from-pink-500 to-pink-600"
   },
@@ -232,7 +232,7 @@ export default function Curriculum() {
               </p>
               <div className="text-center">
                 <a 
-                  href="https://whop.com/discover/the-agency-bg/"
+                  href="https://whop.com/the-agency-bg/?trackingLinkRoute=course"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hardware-accelerated"
