@@ -110,8 +110,8 @@ export default function Testimonials() {
           transition={optimizedTransition}
           className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto"
         >
-          {/* Първо видео - фиксирана позиция */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform xl:col-start-1 transform-gpu">
+          {/* Първо видео - Rek.mp4 */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform order-1 xl:order-1 transform-gpu">
             <div className="absolute inset-0 bg-[#141414]/50 backdrop-blur-sm"></div>
             <video
               controls
@@ -126,8 +126,8 @@ export default function Testimonials() {
             </video>
           </div>
 
-          {/* Второ видео - фиксирана позиция */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform xl:col-start-2 transform-gpu">
+          {/* Второ видео - video222.mp4 */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform order-2 xl:order-2 transform-gpu">
             <div className="absolute inset-0 bg-[#141414]/50 backdrop-blur-sm"></div>
             <video
               controls
@@ -142,8 +142,8 @@ export default function Testimonials() {
             </video>
           </div>
 
-          {/* Трето видео - фиксирана позиция */}
-          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform xl:col-start-3 transform-gpu">
+          {/* Трето видео - video1111.mp4 */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl will-change-transform order-3 xl:order-3 transform-gpu">
             <div className="absolute inset-0 bg-[#141414]/50 backdrop-blur-sm"></div>
             <video
               controls
