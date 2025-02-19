@@ -174,7 +174,7 @@ export default function Hero() {
                 poster="/img/video-poster.jpg"
                 controlsList="nodownload"
               >
-                <source src="/img/vsl.mp4" type="video/mp4" />
+                <source src="/img/korkfinal.mp4" type="video/mp4" />
               </video>
             </div>
           </motion.div>
