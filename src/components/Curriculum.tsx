@@ -214,7 +214,7 @@ export default function Curriculum() {
           >
             <div className="bg-[#141414]/50 backdrop-blur-sm rounded-3xl p-4 border border-gray-800/50 transition-optimized">
               <Image
-                src="/images/curriculum-preview.jpg"
+                src="/img/curriculum-preview.jpg"
                 alt="Curriculum Preview"
                 width={600}
                 height={400}

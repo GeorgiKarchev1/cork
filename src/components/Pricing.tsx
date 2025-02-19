@@ -92,13 +92,17 @@ export default function Pricing() {
           <div className="flex flex-col items-center gap-4">
             <span className="text-3xl text-gray-400 line-through opacity-50">3,890 лв.</span>
             
-            <div className="flex items-center gap-4">
-              <span className="text-2xl text-gray-300">Само за</span>
-              <div className="flex items-center">
-                <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">60 лв</span>
-                <span className="text-xl text-gray-400 ml-2">/ месец</span>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <span className="text-2xl text-gray-300">Само за</span>
+                <div className="flex items-center">
+                  <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">60 лв</span>
+                  <span className="text-xl text-gray-400 ml-2">/ месец</span>
+                </div>
               </div>
-              <span className="text-2xl text-gray-400">или</span>
+              
+              <span className="text-2xl text-gray-400 my-2 sm:my-0">или</span>
+              
               <div className="flex items-center">
                 <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">600 лв</span>
                 <span className="text-xl text-gray-400 ml-2">/ година</span>

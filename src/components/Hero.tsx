@@ -144,9 +144,12 @@ export default function Hero() {
           className="text-center max-w-4xl backdrop-blur-sm hardware-accelerated px-2 xs:px-4"
         >
           <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-3 xs:mb-4 sm:mb-6 leading-tight">
-            <span className="text-gray-300">Готови ли сте да</span>
+            <span className="text-gray-300">Новата ера на</span>
             <br />
-            <span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">вдигнете нивото?</span>
+            <span>
+              <span className="bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">видео обработката</span>
+              <span className="text-white"> в България започва тук</span>
+            </span>
           </h1>
           <p className="text-gray-300 text-sm xs:text-base sm:text-xl mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
             Независимо дали се опитвате да изградите свой собствен YouTube канал, да изкарвате пари от видеообработка, или сте фрийлансър, "Агенцията" ще ви издигне на следващото ниво.
