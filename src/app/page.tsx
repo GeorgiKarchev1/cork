@@ -8,6 +8,7 @@ import Pricing from '@/components/Pricing'
 import Testimonials from '@/components/Testimonials'
 import Comparison from '@/components/Comparison'
 import FAQ from '@/components/FAQ'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <Testimonials />
       <Comparison />
       <FAQ />
-      {/* Other sections... */}
+      <Analytics />
     </BackgroundLayout>
   );
 }

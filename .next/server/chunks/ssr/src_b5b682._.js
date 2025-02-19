@@ -1762,7 +1762,7 @@ const benefits = [
         highlight: false
     },
     {
-        title: "Формулата за ВАЙРЪЛ видео",
+        title: "YouTube Masterclass",
         value: "1,000+ лв.",
         highlight: false
     },
