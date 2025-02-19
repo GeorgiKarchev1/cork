@@ -1,7 +1,7 @@
 'use client'
-import { motion, useMotionValue, useTransform, animate, useMotionTemplate } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { optimizedTransition, optimizedVariants } from './shared/AnimationConfig'
+import { optimizedTransition } from './shared/AnimationConfig'
 
 interface Star {
   top: number;

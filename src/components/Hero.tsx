@@ -2,8 +2,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { useIsMobile } from '../hooks/useIsMobile'
-import { fadeInUp, optimizedTransition, optimizedVariants } from '../components/shared/AnimationConfig'
+import { optimizedTransition, optimizedVariants } from '../components/shared/AnimationConfig'
 
 interface Star {
   top: number;
@@ -24,7 +23,6 @@ interface Particle {
 export default function Hero() {
   const [stars, setStars] = useState<Star[]>([]);
   const [particles, setParticles] = useState<Particle[]>([]);
-  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Generate stars

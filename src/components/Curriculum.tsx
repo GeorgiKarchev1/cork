@@ -84,16 +84,6 @@ function generateStars(count: number, seed = 1): Star[] {
 
 export default function Curriculum() {
   const [stars] = useState(() => generateStars(30, 12345));
-  const [particles, setParticles] = useState<Particle[]>([]);
-
-  useEffect(() => {
-    // Оптимизирани частици с по-малък брой и по-кратки анимации
-    const newParticles = Array.from({ length: 10 }, () => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight
-    }));
-    setParticles(newParticles);
-  }, []);
 
   return (
     <section id="curriculum" className="relative py-24 overflow-hidden">
