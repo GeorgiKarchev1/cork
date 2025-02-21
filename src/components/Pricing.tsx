@@ -49,7 +49,7 @@ const benefits = [
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#141414]/70 backdrop-blur-md rounded-full border border-[#7D4CC3]/30">
           <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
           <span className="text-xs font-medium text-gray-300">
-            <span className="text-[#F4A836] font-bold">0</span>
+            <span className="text-[#F4A836] font-bold">15</span>
             <span className="mx-0.5">/</span>
             <span className="text-gray-400">15</span>
           </span>

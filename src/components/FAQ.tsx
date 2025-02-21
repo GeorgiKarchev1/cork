@@ -138,6 +138,7 @@ export default function FAQ() {
             </motion.button>
           </a>
         </motion.div>
+
       </div>
     </section>
   )
