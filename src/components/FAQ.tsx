@@ -141,7 +141,7 @@ export default function FAQ() {
         </motion.div>
 
         {/* Legal Info Link */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -170,7 +170,7 @@ export default function FAQ() {
               Правна информация
             </span>
           </Link>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>
