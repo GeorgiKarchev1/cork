@@ -105,7 +105,7 @@ export default function Pricing() {
               
               <div className="flex items-center">
                 <span className="text-4xl font-bold bg-gradient-to-r from-[#F4A836] to-[#E08E2B] text-transparent bg-clip-text">600 лв</span>
-                <span className="text-xl text-gray-400 ml-2">/ година</span>
+                <span className="text-xl text-gray-400 ml-2">/ завинаги</span>
               </div>
             </div>
           </div>
